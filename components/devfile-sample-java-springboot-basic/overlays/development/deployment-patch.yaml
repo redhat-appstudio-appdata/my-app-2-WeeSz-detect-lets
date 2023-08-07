@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hbhati-tenant/my-app-2/devfile-sample-java-springboot-basic@sha256:5f9f8120123401a6108be76a0f33913838f2c0651d848404baec33f4d48d9305
+        name: my-java-springboot
+        resources: {}
+status: {}
